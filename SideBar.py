@@ -126,7 +126,7 @@ class OpenWithListener(sublime_plugin.EventListener):
                                 item["args"]["extensions"],
                                 item["args"]["args"],
                             )
-                            view.window().run_command("close")
+                            view.close()
                             break
                     except:
                         pass
@@ -136,7 +136,7 @@ class aaaaaSideBarCommand(sublime_plugin.WindowCommand):
     def run(self, paths=[]):
         pass
 
-    def is_visible(self, paths=[]):  # <- WORKS AS AN ONPOPUPSHOWING
+    def is_visible(self, paths=[]):  # <- WORKS AS AN ONPOPUPSHOWN
         Cache.cached = SideBarSelection(paths)
         return False
 
@@ -264,6 +264,87 @@ class SideBarNewDirectoryCommand(sublime_plugin.WindowCommand):
         return CACHED_SELECTION(paths).len() > 0
 
 
+class SideBarFolderSaveViewsCommand(sublime_plugin.WindowCommand):
+    def run(self, paths=[]):
+        views = []
+        for item in SideBarSelection(paths).getSelectedDirectories():
+            views = views + item.views()
+        for view in views:
+            view.run_command("save")
+
+    def is_enabled(self, paths=[]):
+        _views = []
+        has_dirty_view = False
+        for item in SideBarSelection(paths).getSelectedDirectories():
+            views = item.views()
+            _views = _views + views
+            for view in views:
+                if view.is_dirty():
+                    has_dirty_view = True
+        return (
+            CACHED_SELECTION(paths).hasDirectories()
+            and len(views) > 0
+            and has_dirty_view
+        )
+
+    def is_visible(self, paths=[]):
+        return not s.get("disabled_menuitem_folder_save", False)
+
+
+class SideBarFolderCloseViewsCommand(sublime_plugin.WindowCommand):
+    def run(self, paths=[]):
+
+        collapsed = False
+        for item in SideBarSelection(paths).getSelectedDirectories():
+            for view in item.views():
+                if not collapsed:
+                    Window().focus_view(view)
+                    self.collapse_sidebar_folder()
+                    collapsed = True
+                view.close()
+
+    def collapse_sidebar_folder(self):
+        # Window().run_command("reveal_in_side_bar") the tree animation breaks the functionality
+        Window().run_command("focus_side_bar")
+        Window().run_command("move", {"by": "characters", "forward": False})
+
+    def is_enabled(self, paths=[]):
+        views = []
+        for item in SideBarSelection(paths).getSelectedDirectories():
+            views = views + item.views()
+        return CACHED_SELECTION(paths).hasDirectories() and len(views) > 0
+
+    def is_visible(self, paths=[]):
+        return not s.get("disabled_menuitem_folder_close", False)
+
+
+class SideBarFolderCloseOtherViewsCommand(sublime_plugin.WindowCommand):
+    def run(self, paths=[]):
+
+        to_close = self.others_views(paths)
+        for view in to_close:
+            view.close()
+
+    def others_views(self, paths=[]):
+        window = Window()
+        opened = []
+        selected = []
+        for view in window.views():
+            opened.append(view)
+        for item in SideBarSelection(paths).getSelectedDirectories():
+            for view in item.views():
+                selected.append(view)
+
+        return [view for view in opened if view not in selected]
+
+    def is_enabled(self, paths=[]):
+        views = self.others_views(paths)
+        return CACHED_SELECTION(paths).hasDirectories() and len(views) > 0
+
+    def is_visible(self, paths=[]):
+        return not s.get("disabled_menuitem_folder_close", False)
+
+
 class SideBarEditCommand(sublime_plugin.WindowCommand):
     def run(self, paths=[]):
         for item in SideBarSelection(paths).getSelectedFiles():
@@ -350,60 +431,60 @@ class SideBarFilesOpenWithEditApplicationsCommand(sublime_plugin.WindowCommand):
             item.create()
             item.write(
                 """[
-    {"id": "side-bar-files-open-with",
-        "children":
-        [
+	{"id": "side-bar-files-open-with",
+		"children":
+		[
 
-            //application 1
-            {
-                "caption": "Photoshop",
-                "id": "side-bar-files-open-with-photoshop",
+			//application 1
+			{
+				"caption": "Photoshop",
+				"id": "side-bar-files-open-with-photoshop",
 
-                "command": "side_bar_files_open_with",
-                "args": {
-                                    "paths": [],
-                                    "application": "Adobe Photoshop CS5.app", // OSX
-                                    "extensions":"psd|png|jpg|jpeg",  //any file with these extensions
-                                    "args":[]
-                                },
-                "open_automatically" : false // will close the view/tab and launch the application
-            },
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "Adobe Photoshop CS5.app", // OSX
+									"extensions":"psd|png|jpg|jpeg",  //any file with these extensions
+									"args":[]
+								},
+				"open_automatically" : false // will close the view/tab and launch the application
+			},
 
-            //separator
-            {"caption":"-"},
+			//separator
+			{"caption":"-"},
 
-            //application 2
-            {
-                "caption": "SeaMonkey",
-                "id": "side-bar-files-open-with-seamonkey",
+			//application 2
+			{
+				"caption": "SeaMonkey",
+				"id": "side-bar-files-open-with-seamonkey",
 
-                "command": "side_bar_files_open_with",
-                "args": {
-                                    "paths": [],
-                                    "application": "C:\\\\Archivos de programa\\\\SeaMonkey\\\\seamonkey.exe", // WINNT
-                                    "extensions":"", //open all even folders
-                                    "args":[]
-                                },
-                "open_automatically" : false // will close the view/tab and launch the application
-            },
-            //application n
-            {
-                "caption": "Chrome",
-                "id": "side-bar-files-open-with-chrome",
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "C:\\\\Archivos de programa\\\\SeaMonkey\\\\seamonkey.exe", // WINNT
+									"extensions":"", //open all even folders
+									"args":[]
+								},
+				"open_automatically" : false // will close the view/tab and launch the application
+			},
+			//application n
+			{
+				"caption": "Chrome",
+				"id": "side-bar-files-open-with-chrome",
 
-                "command": "side_bar_files_open_with",
-                "args": {
-                                    "paths": [],
-                                    "application": "C:\\\\Documents and Settings\\\\tito\\\\local\\\\Datos de programa\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe",
-                                    "extensions":".*", //any file with extension
-                                    "args":[]
-                        },
-                "open_automatically" : false // will close the view/tab and launch the application
-            },
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "C:\\\\Documents and Settings\\\\tito\\\\local\\\\Datos de programa\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe",
+									"extensions":".*", //any file with extension
+									"args":[]
+						},
+				"open_automatically" : false // will close the view/tab and launch the application
+			},
 
-            {"caption":"-"}
-        ]
-    }
+			{"caption":"-"}
+		]
+	}
 ]"""
             )
         item.edit()
@@ -442,6 +523,10 @@ class SideBarFilesOpenWithCommand(sublime_plugin.WindowCommand):
                     args[k] = args[k].replace(
                         "$DIRNAME",
                         item.path() if item.isDirectory() else item.dirname(),
+                    )
+                    args[k] = args[k].replace(
+                        "$NAME_NO_EXTENSION",
+                        item.name().replace("." + item.extension(), ""),
                     )
                     args[k] = args[k].replace("$NAME", item.name())
                     args[k] = args[k].replace("$EXTENSION", item.extension())
@@ -2416,10 +2501,10 @@ class SideBarOpenInBrowserThread(threading.Thread):
                     ]
                 )
                 commands = ["-new-tab", url]
-        elif browser == "firefox":
+        elif browser == "firefox-developer-edition":
             if sublime.platform() == "osx":
                 items.extend(["open"])
-                commands = ["-a", "/Applications/Firefox.app", url]
+                commands = ["-a", "/Applications/Firefox Developer Edition.app", url]
             else:
                 if s.get("portable_browser", "") != "":
                     items.extend([s.get("portable_browser", "")])
@@ -2434,6 +2519,27 @@ class SideBarOpenInBrowserThread(threading.Thread):
                         "%PROGRAMFILES(X86)%\\Mozilla Firefox\\firefox.exe",
                         "firefox",
                         "firefox.exe",
+                    ]
+                )
+                commands = ["-new-tab", url]
+        elif browser == "firefox":
+            if sublime.platform() == "osx":
+                items.extend(["open"])
+                commands = ["-a", "/Applications/Firefox.app", url]
+            else:
+                if s.get("portable_browser", "") != "":
+                    items.extend([s.get("portable_browser", "")])
+                items.extend(
+                    [
+                        "/usr/bin/firefox",
+                        "%PROGRAMFILES%\\Mozilla Firefox\\firefox.exe",
+                        "%PROGRAMFILES(X86)%\\Mozilla Firefox\\firefox.exe",
+                        "firefox",
+                        "firefox.exe",
+                        "%PROGRAMFILES%\\Firefox Developer Edition\\firefox.exe",
+                        "%PROGRAMFILES(X86)%\\Firefox Developer Edition\\firefox.exe",
+                        "%PROGRAMFILES%\\Nightly\\firefox.exe",
+                        "%PROGRAMFILES(X86)%\\Nightly\\firefox.exe",
                     ]
                 )
                 commands = ["-new-tab", url]
@@ -2668,27 +2774,6 @@ class SideBarDefaultNewFolder(sublime_plugin.EventListener):
                 DefaultDirectory.path = path
 
 
-class SideBarAutoCloseEmptyGroupsCommand(sublime_plugin.EventListener):
-    def on_close(self, view):
-        if s.get("auto_close_empty_groups", False):
-            sublime.set_timeout(self.run, 250)
-
-    def run(self):
-        window = Window()
-        if window.num_groups() > 1:
-            to_close = []
-            for i in range(1, window.num_groups()):
-                if len(window.views_in_group(i)) < 1:
-                    to_close.append(i)
-            to_close.reverse()
-            for item in to_close:
-                window.focus_group(item)
-                window.run_command("close_pane")
-            if len(to_close) > 0:
-                window.focus_group(0)
-                window.run_command("close_file")
-
-
 class SideBarDonateCommand(sublime_plugin.WindowCommand):
     def run(self, paths=[]):
         sublime.message_dialog("Sidebar Enhancements: Thanks for your support ^.^")
@@ -2712,3 +2797,9 @@ class zzzzzSideBarCommand(sublime_plugin.WindowCommand):
     def is_visible(self, paths=[]):  # <- WORKS AS AN ONPOPUPSHOWN
         Cache.cached = False
         return False
+
+
+class zzzzzcacheSideBarCommand(sublime_plugin.EventListener):
+    def on_activated(self, view):
+        if view and view.file_name():
+            Cache.cached = SideBarSelection([view.file_name()])

@@ -808,9 +808,8 @@ class SideBarItem:
                         )
                     if len(window.views()) == 1:
                         window.new_file()
-                    window.focus_view(view)
-                    window.run_command("revert")
-                    window.run_command("close")
+                    view.run_command("revert")
+                    view.close()
 
                     # try to repaint
             try:
@@ -826,8 +825,17 @@ class SideBarItem:
     def views(self):
         path = self.path()
         views = []
-        for window in sublime.windows():
-            for view in window.views():
-                if view.file_name() and path == view.file_name():
-                    views.append(view)
+        if self.isDirectory():
+            for window in sublime.windows():
+                for view in window.views():
+                    if view.file_name() and (
+                        view.file_name().find(path + "\\") == 0
+                        or view.file_name().find(path + "/") == 0
+                    ):
+                        views.append(view)
+        else:
+            for window in sublime.windows():
+                for view in window.views():
+                    if view.file_name() and path == view.file_name():
+                        views.append(view)
         return views
