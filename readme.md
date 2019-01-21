@@ -10,9 +10,9 @@ Russian - <https://www.youtube.com/watch?v=8I0dJTd58kI&feature=youtu.be&a>
 
 ## 介绍
 
-此版本为Sidebar Enhancements的中文版，[原版](https://github.com/SideBarEnhancements-org/SideBarEnhancements)
+此版本为Sidebar Enhancements的中文版，查看原作[Click Me](https://github.com/SideBarEnhancements-org/SideBarEnhancements)
 
-- 为Sublime Text侧栏上的文件和文件夹操作提供增强功能。<http://www.sublimetext.com/>
+- 为[Sublime Text](http://www.sublimetext.com/)侧栏上的文件和文件夹操作提供增强功能。
 
 - 提供“删除”、“打开”和“剪贴板”操作。
 - 关闭、移动、打开、恢复受重命名/移动命令的缓冲区。（甚至在文件夹上）
@@ -36,7 +36,6 @@ Russian - <https://www.youtube.com/watch?v=8I0dJTd58kI&feature=youtu.be&a>
 ----edit（二级文件夹）
 ----Commands.sublime-commands(二级文件)
 …
-…
 ```
 正确的形式是：
 ```
@@ -44,7 +43,6 @@ Russian - <https://www.youtube.com/watch?v=8I0dJTd58kI&feature=youtu.be&a>
 --desktop（一级文件夹）
 --edit（一级文件夹）
 --Commands.sublime-commands(一级文件)
-…
 …
 ```
 
@@ -71,6 +69,8 @@ Russian - <https://www.youtube.com/watch?v=8I0dJTd58kI&feature=youtu.be&a>
 使用F12可以在浏览器中打开当前文件
 
 `url_testing` 允许您设置本地服务器的URL，通过F12打开
+
+
 `url_production`允许您设置产品服务器的URL，通过ALT + F12打开
 
 ### 关于绝对路径
@@ -240,16 +240,16 @@ You should have received a copy of the GNU General Public License along with thi
 
 捐赠该项目.
 
-  [Sublime Text 3+]: http://www.sublimetext.com/
+  [Sublime Text 3+](http://www.sublimetext.com/)
 
-  []: https://www.dropbox.com/s/ckz5n2ncn2pxkii/sidebar.png?dl=1
+  [dropbox]( https://www.dropbox.com/s/ckz5n2ncn2pxkii/sidebar.png?dl=1)
 
-  [desktop]: http://pypi.python.org/pypi/
+  [desktop](http://pypi.python.org/pypi/)
   
-  [Send2Trash]: http://pypi.python.org/pypi/Send2Trash
+  [Send2Trash]( http://pypi.python.org/pypi/Send2Trash)
 
-  [bfg-pages]: http://code.google.com/p/bfg-pages/
+  [bfg-pages]( http://code.google.com/p/bfg-pages/)
 
-  [tito.bouzout@gmail.com]: tito.bouzout@gmail.com
+  [tito.bouzout@gmail.com](tito.bouzout@gmail.com)
 
-  [Donate to support this project.]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DD4SL2AHYJGBW
+  [Donate to support this project.]( https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DD4SL2AHYJGBW)
