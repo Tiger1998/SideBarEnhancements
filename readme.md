@@ -10,7 +10,7 @@ Russian - <https://www.youtube.com/watch?v=8I0dJTd58kI&feature=youtu.be&a>
 
 ## 介绍
 
-此版本为Sidebar Enhancements的中文版，原版[Click me]<https://github.com/SideBarEnhancements-org/SideBarEnhancements>
+此版本为Sidebar Enhancements的中文版，[原版](https://github.com/SideBarEnhancements-org/SideBarEnhancements)
 
 ### [Sublime Text 3+][] 不再支持 ST2; 请使用Sublime Text 3.
 
