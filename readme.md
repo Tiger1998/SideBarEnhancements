@@ -10,7 +10,7 @@ Russian - <https://www.youtube.com/watch?v=8I0dJTd58kI&feature=youtu.be&a>
 
 ## 介绍
 
-此版本为Sidebar Enhancements[Sidebar Enhancements](https://github.com/SideBarEnhancements-org/SideBarEnhancements)的中文版，为[Sublime Text](http://www.sublimetext.com/)侧栏上的文件和文件夹操作提供增强功能。
+此版本为Sidebar Enhancements[Sidebar Enhancements](https://github.com/SideBarEnhancements-org/SideBarEnhancements)的中文版，为[Sublime Text](http://www.sublimetext.com/)侧栏文件和文件夹操作提供增强功能。
 
 - 提供“删除”、“打开”和“剪贴板”操作。
 - 关闭、移动、打开、恢复受重命名/移动命令的缓冲区。（甚至在文件夹上）
