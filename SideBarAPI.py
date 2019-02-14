@@ -360,9 +360,7 @@ class SideBarItem:
                         base = expandVars(key)
                     else:
                         base = os.path.normpath(
-                            expandVars(
-                                os.path.dirname(os.path.dirname(filename)) + "/" + key
-                            )
+                            expandVars(key)
                         )
                     base = (
                         base.replace("\\", "/")
@@ -380,7 +378,7 @@ class SideBarItem:
                     )
                     # 	print(current)
                     url_path = re.sub(
-                        re.compile("^" + re.escape(base), re.IGNORECASE), "", current
+                        re.compile("^.?*" + re.escape(base), re.IGNORECASE), "", current
                     )
                     # 	print(url_path)
                     if url_path != current:
