@@ -10,14 +10,12 @@ Russian - <https://www.youtube.com/watch?v=8I0dJTd58kI&feature=youtu.be&a>
 
 ## 介绍
 
-此版本为Sidebar Enhancements的中文版，查看原作[Click Me](https://github.com/SideBarEnhancements-org/SideBarEnhancements)
-
-- 为[Sublime Text](http://www.sublimetext.com/)侧栏上的文件和文件夹操作提供增强功能。
+此版本为Sidebar Enhancements[Sidebar Enhancements](https://github.com/SideBarEnhancements-org/SideBarEnhancements)的中文版，为[Sublime Text](http://www.sublimetext.com/)侧栏上的文件和文件夹操作提供增强功能。
 
 - 提供“删除”、“打开”和“剪贴板”操作。
 - 关闭、移动、打开、恢复受重命名/移动命令的缓冲区。（甚至在文件夹上）
 - 基本功能：新建文件/文件夹、编辑、打开/运行、打开文件位置、查找所选/父文件夹/项目、剪切、复制、粘贴、粘贴到父目录、重命名、移动、删除、刷新……
-- 高级功能：可选URI/URL编码复制路径、UTF-8、base64（非常适合嵌入css）编码复制内容、复制img/a/script/style等标签
+- 高级功能：可选复制URL编码后的路径、复制UTF-8编码的内容、复制base64转码后的内容（非常适合嵌入css）、复制快速生成img/a/script/style等标签内容
 - 当删除操作受影响时，使用“首选项”来控制是否关闭缓冲区
 - 允许在状态栏上显示“文件修改日期”和“文件大小”。（可能有点儿麻烦）
 
@@ -25,10 +23,10 @@ Russian - <https://www.youtube.com/watch?v=8I0dJTd58kI&feature=youtu.be&a>
 
 ## 安装
 
-下载或复制到与包名同名的文件夹到ST的Packages文件夹中。
+下载或复制到与包名同名的文件夹到ST的Packages文件夹中（首选项Preferences->浏览插件目录Browse Packages...）
 
 
-也可以到[releases](https://github.com/52fisher/SideBarEnhancements/releases)页面下载，**请注意：下载后的压缩包不能直接使用，要解压去掉内层文件夹，将所有文件放到压缩包的根目录下。**如下载后的压缩包打开后是这样的：
+也可以到[releases](https://github.com/52fisher/SideBarEnhancements/releases)页面下载，** 请注意：下载后的压缩包不能直接使用，要解压去掉内层文件夹，将所有文件放到压缩包的根目录下。** 如下载后的压缩包打开后是这样的：
 ```
 --SideBarEnhancements-5.0.23（一级文件夹）
 ----bin（二级文件夹）
@@ -75,7 +73,7 @@ Russian - <https://www.youtube.com/watch?v=8I0dJTd58kI&feature=youtu.be&a>
 
 ### 关于绝对路径
 
-- 右键单击侧栏上的任何文件，然后选择：“项目 - >编辑项目预览URL”
+- 右键单击侧栏上的任何文件，然后选择：“项目 - >编辑预览地址”
 - 编辑此文件，并使用以下结构添加路径和URL：
 <!-- -->
 
