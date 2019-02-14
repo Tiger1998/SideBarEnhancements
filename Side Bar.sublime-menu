@@ -20,19 +20,19 @@
 	},
 	{"caption": "-", "id": "side-bar-new-separator"},
 	{
-		"caption": "Save Views",
+		"caption": "保存当前项目",
 		"id": "side-bar-folder-save-views",
 		"command": "side_bar_folder_save_views",
 		"args": {"paths": []}
 	},
 	{
-		"caption": "Close Views",
+		"caption": "关闭当前项目",
 		"id": "side-bar-folder-close-views",
 		"command": "side_bar_folder_close_views",
 		"args": {"paths": []}
 	},
 	{
-		"caption": "Close Other Views",
+		"caption": "关闭其他项目",
 		"id": "side-bar-folder-close-other-views",
 		"command": "side_bar_folder_close_other_views",
 		"args": {"paths": []}
@@ -51,13 +51,13 @@
 		"args": {"paths": []}
 	},
 	{
-		"caption": "打开 / 运行",
+		"caption": "打开/运行",
 		"id": "side-bar-open",
 		"command": "side_bar_open",
 		"args": {"paths": []}
 	},
 	{
-		"caption": "在浏览器中打开",
+		"caption": "用浏览程序打开",
 		"id": "side-bar-open-in-browser",
 		"children": [
 			{
@@ -77,7 +77,7 @@
 				}
 			},
 			{
-				"caption": "Firefox Developer Edition",
+				"caption": "Firefox开发者版本",
 				"command": "side_bar_open_in_browser",
 				"args": {
 					"paths": [],
@@ -106,7 +106,7 @@
 				}
 			},
 			{
-				"caption": "Canary",
+				"caption": "Chrome金丝雀版",
 				"command": "side_bar_open_in_browser",
 				"args": {
 					"paths": [],
@@ -163,25 +163,25 @@
 		]
 	},
 	{
-		"caption": "用新窗口打开",
+		"caption": "在新窗口中打开",
 		"id": "side-bar-open-in-new-window",
 		"command": "side_bar_open_in_new_window",
 		"args": {"paths": []}
 	},
 	{
-		"caption": "在Finder中打开",
+		"caption": "用Finder打开",
 		"id": "side-bar-open-with-finde",
 		"command": "side_bar_open_with_finder",
 		"args": {"paths": []}
 	},
 	{
-		"caption": "用...打开",
+		"caption": "用……打开",
 		"id": "side-bar-files-open-with",
 
 		"children": [
 			{"caption": "-", "id": "side-bar-files-open-with-edit-application-separator"},
 			{
-				"caption": "Edit Applications…",
+				"caption": "编辑应用程序…",
 				"id": "side-bar-files-open-with-edit-applications",
 				"command": "side_bar_files_open_with_edit_applications",
 				"args": {"paths": []}
@@ -199,13 +199,13 @@
 	{"caption": "-", "id": "side-bar-edit-open-separator"},
 
 	{
-		"caption": "查找与替换…",
+		"caption": "查找与替换……",
 		"id": "side-bar-find-selected",
 		"command": "side_bar_find_in_selected",
 		"args": {"paths": []}
 	},
 	{
-		"caption": "查找文件名...",
+		"caption": "查找文件名……",
 		"id": "side-bar-find-files",
 		"command": "side_bar_find_files_path_containing",
 		"args": {"paths": []}
@@ -245,14 +245,14 @@
 				"args": {"paths": []}
 			},
 			{
-				"caption": "在所含路径中…",
+				"caption": "在其所在路径中",
 				"id": "side-bar-find-files-path-containing",
 				"command": "side_bar_find_files_path_containing",
 				"args": {"paths": []}
 			},
 			{"caption": "-", "id": "side-bar-mass-rename-separator"},
 			{
-				"caption": "批量重命名…",
+				"caption": "批量重命名……",
 				"id": "side-bar-mass-rename",
 				"command": "side_bar_mass_rename",
 				"args": {"paths": []}
@@ -279,7 +279,7 @@
 		"args": {"paths": []}
 	},
 	{
-		"caption": "复制路径",
+		"caption": "复制URL编码名称",
 		"id": "side-bar-clip-copy-path",
 		"command": "side_bar_copy_path_relative_from_project_encoded",
 		"args": {"paths": []}
@@ -297,18 +297,18 @@
 		"args": {"paths": []}
 	},
 	{
-		"caption": "复制为文本",
+		"caption": "复制为……",
 		"id": "side-bar-clip-copy-as",
 		"children": [
 			{
-				"caption": "上次选择视图的相对路径",
+				"caption": "上次打开文件的相对路径",
 				"id": "side-bar-clip-copy-path-relative-to-last-selected-view",
 				"command": "side_bar_copy_path_relative_to_last_selected_view",
 				"args": {"paths": []}
 			},
 			{"caption": "-", "id": "side-bar-clip-copy-path-relative-to-last-selected-view-separator"},
 			{
-				"caption": "已编码的相对路径",
+				"caption": "URL转码相对路径",
 				"id": "side-bar-clip-copy-path-relative-from-view-encoded",
 				"command": "side_bar_copy_path_relative_from_view_encoded",
 				"args": {"paths": []}
@@ -322,13 +322,13 @@
 			{"caption": "-", "id": "side-bar-clip-copy-path-relative-from-view-separator"},
 
 			{
-				"caption": "已编码的项目相对路径",
+				"caption": "相对项目的URL转码相对路径",
 				"id": "side-bar-clip-copy-path-relative-from-project-encoded",
 				"command": "side_bar_copy_path_relative_from_project_encoded",
 				"args": {"paths": []}
 			},
 			{
-				"caption": "项目相对路径",
+				"caption": "相对项目的相对路径",
 				"id": "side-bar-clip-copy-path-relative-from-project",
 				"command": "side_bar_copy_path_relative_from_project",
 				"args": {"paths": []}
@@ -336,13 +336,13 @@
 			{"caption": "-", "id": "side-bar-clip-copy-path-relative-from-project-separator"},
 
 			{
-				"caption": "已编码的项目绝对路径",
+				"caption": "相对项目的URL转码绝对路径",
 				"id": "side-bar-clip-copy-path-absolute-from-project-encoded",
 				"command": "side_bar_copy_path_absolute_from_project_encoded",
 				"args": {"paths": []}
 			},
 			{
-				"caption": "项目绝对路径",
+				"caption": "相对项目的绝对路径",
 				"id": "side-bar-clip-copy-path-absolute-from-project",
 				"command": "side_bar_copy_path_absolute_from_project",
 				"args": {"paths": []}
@@ -350,19 +350,19 @@
 			{"caption": "-", "id": "side-bar-clip-copy-path-absolute-from-project-separator"},
 
 			{
-				"caption": "URI编码路径",
+				"caption": "URI路径",
 				"id": "side-bar-clip-copy-path-encoded",
 				"command": "side_bar_copy_path_encoded",
 				"args": {"paths": []}
 			},
 			{
-				"caption": "路径",
+				"caption": "文件位置路径",
 				"id": "side-bar-clip-copy-path",
 				"command": "side_bar_copy_path",
 				"args": {"paths": []}
 			},
 			{
-				"caption": "引用路径",
+				"caption": "引用文件位置路径",
 				"id": "side-bar-clip-copy-path-quoted",
 				"command": "side_bar_copy_path_quoted",
 				"args": {"paths": []}
@@ -370,7 +370,7 @@
 			{"caption": "-", "id": "side-bar-clip-copy-path-separator"},
 
 			{
-				"caption": "已编码的名称",
+				"caption": "URL转码名称",
 				"id": "side-bar-clip-copy-name-encoded",
 				"command": "side_bar_copy_name_encoded",
 				"args": {"paths": []}
@@ -378,13 +378,13 @@
 			{"caption": "-", "id": "side-bar-clip-copy-name-encoded-separator"},
 
 			{
-				"caption": "URL编码",
+				"caption": "URL编码后的名称",
 				"id": "side-bar-clip-copy-url",
 				"command": "side_bar_copy_url",
 				"args": {"paths": []}
 			},
 			{
-				"caption": "URL解码",
+				"caption": "URL解码后的名称",
 				"id": "side-bar-clip-copy-url-decoded",
 				"command": "side_bar_copy_url_decoded",
 				"args": {"paths": []}
@@ -424,13 +424,13 @@
 			},
 			{"caption": "-", "id": "side-bar-clip-copy-project-directories-separator"},
 			{
-				"caption": "UTF-8内容",
+				"caption": "UTF-8编码后的内容",
 				"id": "side-bar-clip-copy-content-utf8",
 				"command": "side_bar_copy_content_utf8",
 				"args": {"paths": []}
 			},
 			{
-				"caption": "base64内容",
+				"caption": "base64编码后的内容",
 				"id": "side-bar-clip-copy-content-base-64",
 				"command": "side_bar_copy_content_base64",
 				"args": {"paths": []}
@@ -458,7 +458,7 @@
 	},
 	{"caption": "-", "id": "side-bar-clip-separator"},
 	{
-		"caption": "文件副本…",
+		"caption": "创建文件副本…",
 		"id": "side-bar-duplicate",
 		"command": "side_bar_duplicate",
 		"args": {"paths": []}
@@ -523,13 +523,13 @@
 			},
 			{"caption": "-", "id": "side-bar-promote-as-project-folder-separator"},
 			{
-				"caption": "添加为为项目文件夹",
+				"caption": "添加为项目文件夹",
 				"id": "side-bar-project-item-add",
 				"command": "side_bar_project_item_add",
 				"args": {"paths": []}
 			},
 			{
-				"caption": "从侧栏隐藏(不包括项目)",
+				"caption": "从项目中移除该文件)",
 				"id": "side-bar-project-item-exclude",
 				"command": "side_bar_project_item_exclude",
 				"args": {"paths": []}
@@ -586,15 +586,11 @@
 	},
 	{"caption": "-", "id": "side-bar-donate-separator"},
 	{
-<<<<<<< HEAD
 		"caption": "-",
 		"id": "side-bar-donate-separator"
 	},
 	{
-		"caption": "捐赠$20",
-=======
-		"caption": "Give 20",
->>>>>>> 97d6ac4d9dca002bbcde92a9724240599176c26a
+		"caption": "乐捐作者$20",
 		"command": "side_bar_donate",
 		"args": {"paths": []}
 	},

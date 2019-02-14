@@ -2,4 +2,4 @@
 *.cache
 push.bat
 *.pyc
-bak.txt
+*.test

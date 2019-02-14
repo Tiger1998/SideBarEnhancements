@@ -680,11 +680,11 @@ class SideBarFindInFilesWithExtensionCommand(sublime_plugin.WindowCommand):
             items.append("*" + item.extension())
         items = list(set(items))
         if len(items) > 1:
-            return "In Files With Extensions " + (",".join(items)) + "…"
+            return "在后缀名为" + (",".join(items)) + "的文件中……"
         elif len(items) > 0:
-            return "In Files With Extension " + (",".join(items)) + "…"
+            return "在后缀名为" + (",".join(items)) + "的文件中………"
         else:
-            return "In Files With Extension…"
+            return "在所有文件中……"
 
 
 Object.sidebar_instant_search_id = 0
@@ -2273,7 +2273,7 @@ class SideBarProjectItemExcludeFromIndexCommand(sublime_plugin.WindowCommand):
 
     def description(self, paths=[], type="item"):
         items = self.items(paths, type, CACHED_SELECTION(paths))
-        return 'Exclude From Index (mark as binary) "' + (",".join(items)) + '"'
+        return '从索引中排除（二进制标记）"' + (",".join(items)) + '"'
 
     def items(self, paths=[], type="item", object=None):
         items = []
