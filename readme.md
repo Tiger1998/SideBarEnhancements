@@ -26,7 +26,7 @@ Russian - <https://www.youtube.com/watch?v=8I0dJTd58kI&feature=youtu.be&a>
 下载或复制到与包名同名的文件夹到ST的Packages文件夹中（首选项Preferences->浏览插件目录Browse Packages...）
 
 
-也可以到[releases](https://github.com/52fisher/SideBarEnhancements/releases)页面下载，**请注意：下载后的压缩包不能直接使用，要解压去掉内层文件夹，将所有文件放到压缩包的根目录下。**
+也可以到[releases](https://github.com/52fisher/SideBarEnhancements/releases)页面下载，**请注意：解压后其对应的文件夹路径应为：Sublime Text 3\Data\Packages\SideBarEnhancements**
 
 如下载后的压缩包打开后是这样的：
 
