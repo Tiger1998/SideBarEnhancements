@@ -279,7 +279,7 @@
 		"args": {"paths": []}
 	},
 	{
-		"caption": "复制URL编码名称",
+		"caption": "复制URL编码后的名称",
 		"id": "side-bar-clip-copy-path",
 		"command": "side_bar_copy_path_relative_from_project_encoded",
 		"args": {"paths": []}
@@ -301,14 +301,14 @@
 		"id": "side-bar-clip-copy-as",
 		"children": [
 			{
-				"caption": "上次打开文件的相对路径",
+				"caption": "上个所选视图文件的相对路径",
 				"id": "side-bar-clip-copy-path-relative-to-last-selected-view",
 				"command": "side_bar_copy_path_relative_to_last_selected_view",
 				"args": {"paths": []}
 			},
 			{"caption": "-", "id": "side-bar-clip-copy-path-relative-to-last-selected-view-separator"},
 			{
-				"caption": "URL转码相对路径",
+				"caption": "URL编码后的相对路径",
 				"id": "side-bar-clip-copy-path-relative-from-view-encoded",
 				"command": "side_bar_copy_path_relative_from_view_encoded",
 				"args": {"paths": []}
@@ -336,7 +336,7 @@
 			{"caption": "-", "id": "side-bar-clip-copy-path-relative-from-project-separator"},
 
 			{
-				"caption": "相对项目的URL转码绝对路径",
+				"caption": "相对项目URL编码后的绝对路径",
 				"id": "side-bar-clip-copy-path-absolute-from-project-encoded",
 				"command": "side_bar_copy_path_absolute_from_project_encoded",
 				"args": {"paths": []}
@@ -350,19 +350,19 @@
 			{"caption": "-", "id": "side-bar-clip-copy-path-absolute-from-project-separator"},
 
 			{
-				"caption": "URI路径",
+				"caption": "URL路径",
 				"id": "side-bar-clip-copy-path-encoded",
 				"command": "side_bar_copy_path_encoded",
 				"args": {"paths": []}
 			},
 			{
-				"caption": "文件位置路径",
+				"caption": "本地文件路径",
 				"id": "side-bar-clip-copy-path",
 				"command": "side_bar_copy_path",
 				"args": {"paths": []}
 			},
 			{
-				"caption": "引用文件位置路径",
+				"caption": "引用的本地文件路径",
 				"id": "side-bar-clip-copy-path-quoted",
 				"command": "side_bar_copy_path_quoted",
 				"args": {"paths": []}
@@ -370,7 +370,7 @@
 			{"caption": "-", "id": "side-bar-clip-copy-path-separator"},
 
 			{
-				"caption": "URL转码名称",
+				"caption": "URL编码后的名称",
 				"id": "side-bar-clip-copy-name-encoded",
 				"command": "side_bar_copy_name_encoded",
 				"args": {"paths": []}
