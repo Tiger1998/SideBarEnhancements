@@ -200,11 +200,11 @@ Russian - <https://www.youtube.com/watch?v=8I0dJTd58kI&feature=youtu.be&a>
 
 (check each license in project pages)
 
--   "getImageInfo" to get width and height for images from "bfg-pages". See: <http://code.google.com/p/bfg-pages/>
--   "desktop" to be able to open files with system handlers. See: <http://pypi.python.org/pypi/desktop>
--   "send2trash" to be able to send to the trash instead of deleting for ever!. See: <http://pypi.python.org/pypi/Send2Trash>
--   "hurry.filesize" to be able to format file sizes. See: <http://pypi.python.org/pypi/hurry.filesize/>
--   "Edit.py" ST2/3 Edit Abstraction. See: <http://www.sublimetext.com/forum/viewtopic.php?f=6&t=12551>
+- "getImageInfo" to get width and height for images from "bfg-pages". See: <http://code.google.com/p/bfg-pages/>
+- "desktop" to be able to open files with system handlers. See: <http://pypi.python.org/pypi/desktop>
+- "send2trash" to be able to send to the trash instead of deleting for ever!. See: <http://pypi.python.org/pypi/Send2Trash>
+- "hurry.filesize" to be able to format file sizes. See: <http://pypi.python.org/pypi/hurry.filesize/>
+- "Edit.py" ST2/3 Edit Abstraction. See: <http://www.sublimetext.com/forum/viewtopic.php?f=6&t=12551>
 
 ## 源代码
 
