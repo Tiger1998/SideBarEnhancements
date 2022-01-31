@@ -170,7 +170,7 @@
 		"args": { "paths": [] }
 	},
 	{
-		"caption": "用……打开",
+		"caption": "用…打开",
 		"id": "side-bar-files-open-with",
 
 		"children": [
@@ -194,13 +194,13 @@
 	{ "caption": "-", "id": "side-bar-edit-open-separator" },
 
 	{
-		"caption": "查找与替换……",
+		"caption": "查找与替换…",
 		"id": "side-bar-find-selected",
 		"command": "side_bar_find_in_selected",
 		"args": { "paths": [] }
 	},
 	{
-		"caption": "查找文件名……",
+		"caption": "查找文件名…",
 		"id": "side-bar-find-files",
 		"command": "side_bar_find_files_path_containing",
 		"args": { "paths": [] }
@@ -247,7 +247,7 @@
 			},
 			{ "caption": "-", "id": "side-bar-mass-rename-separator" },
 			{
-				"caption": "批量重命名……",
+				"caption": "批量重命名…",
 				"id": "side-bar-mass-rename",
 				"command": "side_bar_mass_rename",
 				"args": { "paths": [] }
@@ -292,7 +292,7 @@
 		"args": { "paths": [] }
 	},
 	{
-		"caption": "复制为……",
+		"caption": "复制为…",
 		"id": "side-bar-clip-copy-as",
 		"children": [
 			{
@@ -580,7 +580,7 @@
 		]
 	},
 	{
-		"caption": "Promote",
+		"caption": "添加为项目文件夹",
 		"id": "side-bar-project-item-add",
 		"command": "side_bar_project_item_add",
 		"args": { "paths": [] }
