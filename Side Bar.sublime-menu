@@ -3,58 +3,58 @@
 		"caption": "aaaaa_side_bar",
 		"id": "aaaaa_side_bar",
 		"command": "aaaaa_side_bar",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
-	{"caption": "-", "id": "side-bar-start-separator"},
+	{ "caption": "-", "id": "side-bar-start-separator" },
 	{
 		"caption": "新建文件",
 		"id": "side-bar-new-file",
 		"command": "side_bar_new_file",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 	{
 		"caption": "新建文件夹",
 		"id": "side-bar-new-directory",
 		"command": "side_bar_new_directory",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
-	{"caption": "-", "id": "side-bar-new-separator"},
+	{ "caption": "-", "id": "side-bar-new-separator" },
 	{
 		"caption": "保存当前项目",
 		"id": "side-bar-folder-save-views",
 		"command": "side_bar_folder_save_views",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 	{
 		"caption": "关闭当前项目",
 		"id": "side-bar-folder-close-views",
 		"command": "side_bar_folder_close_views",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 	{
 		"caption": "关闭其他项目",
 		"id": "side-bar-folder-close-other-views",
 		"command": "side_bar_folder_close_other_views",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
-	{"caption": "-", "id": "side-bar-save-close-views-separator"},
+	{ "caption": "-", "id": "side-bar-save-close-views-separator" },
 	{
 		"caption": "编辑",
 		"id": "side-bar-edit",
 		"command": "side_bar_edit",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 	{
 		"caption": "右栏编辑",
 		"id": "side-bar-edit-to-right",
 		"command": "side_bar_edit_to_right",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 	{
 		"caption": "打开/运行",
 		"id": "side-bar-open",
 		"command": "side_bar_open",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 	{
 		"caption": "用浏览程序打开",
@@ -63,10 +63,9 @@
 			{
 				"caption": "默认",
 				"command": "side_bar_open_in_browser",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
-			{"caption": "-"
-			},
+			{ "caption": "-" },
 			{
 				"caption": "Firefox",
 				"command": "side_bar_open_in_browser",
@@ -85,8 +84,7 @@
 					"browser": "firefox-developer-edition"
 				}
 			},
-			{"caption": "-"
-			},
+			{ "caption": "-" },
 			{
 				"caption": "Chromium",
 				"command": "side_bar_open_in_browser",
@@ -114,8 +112,7 @@
 					"browser": "canary"
 				}
 			},
-			{"caption": "-"
-			},
+			{ "caption": "-" },
 			{
 				"caption": "Opera",
 				"command": "side_bar_open_in_browser",
@@ -134,8 +131,7 @@
 					"browser": "safari"
 				}
 			},
-			{"caption": "-"
-			},
+			{ "caption": "-" },
 			{
 				"caption": "Internet Explorer",
 				"command": "side_bar_open_in_browser",
@@ -154,8 +150,7 @@
 					"browser": "edge"
 				}
 			},
-			{"caption": "-"
-			},
+			{ "caption": "-" },
 			{
 				"caption": "在所有浏览器中打开",
 				"command": "side_bar_open_browsers"
@@ -166,49 +161,49 @@
 		"caption": "在新窗口中打开",
 		"id": "side-bar-open-in-new-window",
 		"command": "side_bar_open_in_new_window",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 	{
 		"caption": "用Finder打开",
 		"id": "side-bar-open-with-finde",
 		"command": "side_bar_open_with_finder",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 	{
 		"caption": "用……打开",
 		"id": "side-bar-files-open-with",
 
 		"children": [
-			{"caption": "-", "id": "side-bar-files-open-with-edit-application-separator"},
+			{ "caption": "-", "id": "side-bar-files-open-with-edit-application-separator" },
 			{
 				"caption": "编辑应用程序…",
 				"id": "side-bar-files-open-with-edit-applications",
 				"command": "side_bar_files_open_with_edit_applications",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
-			{"caption": "-", "id": "side-bar-files-open-with-edit-applications-separator"}
+			{ "caption": "-", "id": "side-bar-files-open-with-edit-applications-separator" }
 		]
 	},
 	{
 		"caption": "打开文件位置",
 		"id": "side-bar-reveal",
 		"command": "side_bar_reveal",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 
-	{"caption": "-", "id": "side-bar-edit-open-separator"},
+	{ "caption": "-", "id": "side-bar-edit-open-separator" },
 
 	{
 		"caption": "查找与替换……",
 		"id": "side-bar-find-selected",
 		"command": "side_bar_find_in_selected",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 	{
 		"caption": "查找文件名……",
 		"id": "side-bar-find-files",
 		"command": "side_bar_find_files_path_containing",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 	{
 		"caption": "高级查找",
@@ -218,83 +213,83 @@
 				"caption": "在上级目录中…",
 				"id": "side-bar-find-parent",
 				"command": "side_bar_find_in_parent",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
-			{"caption": "-", "id": "side-bar-find-parent-separator"},
+			{ "caption": "-", "id": "side-bar-find-parent-separator" },
 			{
 				"caption": "在项目中…",
 				"id": "side-bar-find-in-project",
 				"command": "side_bar_find_in_project",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
 			{
 				"caption": "在项目文件夹中…",
 				"id": "side-bar-find-project-folder",
 				"command": "side_bar_find_in_project_folder",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
 			{
 				"caption": "在所有项目文件夹中…",
 				"id": "side-bar-find-project-folders",
 				"command": "side_bar_find_in_project_folders"
 			},
-			{"caption": "-", "id": "side-bar-find-project-separator"},
+			{ "caption": "-", "id": "side-bar-find-project-separator" },
 			{
 				"id": "side-bar-find-in-files-with-extension",
 				"command": "side_bar_find_in_files_with_extension",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
 			{
 				"caption": "在其所在路径中",
 				"id": "side-bar-find-files-path-containing",
 				"command": "side_bar_find_files_path_containing",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
-			{"caption": "-", "id": "side-bar-mass-rename-separator"},
+			{ "caption": "-", "id": "side-bar-mass-rename-separator" },
 			{
 				"caption": "批量重命名……",
 				"id": "side-bar-mass-rename",
 				"command": "side_bar_mass_rename",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			}
 		]
 	},
-	{"caption": "-", "id": "side-bar-find-separator"},
+	{ "caption": "-", "id": "side-bar-find-separator" },
 	{
 		"caption": "剪切",
 		"id": "side-bar-clip-cut",
 		"command": "side_bar_cut",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 	{
 		"caption": "复制",
 		"id": "side-bar-clip-copy",
 		"command": "side_bar_copy",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 	{
 		"caption": "复制名称",
 		"id": "side-bar-clip-copy-name",
 		"command": "side_bar_copy_name",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 	{
 		"caption": "复制URL编码后的名称",
 		"id": "side-bar-clip-copy-path",
 		"command": "side_bar_copy_path_relative_from_project_encoded",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 	{
 		"caption": "复制绝对路径",
 		"id": "side-bar-clip-copy-path-windows",
 		"command": "side_bar_copy_path_absolute_from_project_encoded_windows",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 	{
 		"caption": "复制目录路径",
 		"id": "side-bar-clip-copy-dir-path",
 		"command": "side_bar_copy_dir_path",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 	{
 		"caption": "复制为……",
@@ -304,136 +299,136 @@
 				"caption": "上个所选视图文件的相对路径",
 				"id": "side-bar-clip-copy-path-relative-to-last-selected-view",
 				"command": "side_bar_copy_path_relative_to_last_selected_view",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
-			{"caption": "-", "id": "side-bar-clip-copy-path-relative-to-last-selected-view-separator"},
+			{ "caption": "-", "id": "side-bar-clip-copy-path-relative-to-last-selected-view-separator" },
 			{
 				"caption": "URL编码后的相对路径",
 				"id": "side-bar-clip-copy-path-relative-from-view-encoded",
 				"command": "side_bar_copy_path_relative_from_view_encoded",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
 			{
 				"caption": "相对路径",
 				"id": "side-bar-clip-copy-path-relative-from-view",
 				"command": "side_bar_copy_path_relative_from_view",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
-			{"caption": "-", "id": "side-bar-clip-copy-path-relative-from-view-separator"},
+			{ "caption": "-", "id": "side-bar-clip-copy-path-relative-from-view-separator" },
 
 			{
 				"caption": "相对项目的URL转码相对路径",
 				"id": "side-bar-clip-copy-path-relative-from-project-encoded",
 				"command": "side_bar_copy_path_relative_from_project_encoded",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
 			{
 				"caption": "相对项目的相对路径",
 				"id": "side-bar-clip-copy-path-relative-from-project",
 				"command": "side_bar_copy_path_relative_from_project",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
-			{"caption": "-", "id": "side-bar-clip-copy-path-relative-from-project-separator"},
+			{ "caption": "-", "id": "side-bar-clip-copy-path-relative-from-project-separator" },
 
 			{
 				"caption": "相对项目URL编码后的绝对路径",
 				"id": "side-bar-clip-copy-path-absolute-from-project-encoded",
 				"command": "side_bar_copy_path_absolute_from_project_encoded",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
 			{
 				"caption": "相对项目的绝对路径",
 				"id": "side-bar-clip-copy-path-absolute-from-project",
 				"command": "side_bar_copy_path_absolute_from_project",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
-			{"caption": "-", "id": "side-bar-clip-copy-path-absolute-from-project-separator"},
+			{ "caption": "-", "id": "side-bar-clip-copy-path-absolute-from-project-separator" },
 
 			{
 				"caption": "URL路径",
 				"id": "side-bar-clip-copy-path-encoded",
 				"command": "side_bar_copy_path_encoded",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
 			{
 				"caption": "本地文件路径",
 				"id": "side-bar-clip-copy-path",
 				"command": "side_bar_copy_path",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
 			{
 				"caption": "引用的本地文件路径",
 				"id": "side-bar-clip-copy-path-quoted",
 				"command": "side_bar_copy_path_quoted",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
-			{"caption": "-", "id": "side-bar-clip-copy-path-separator"},
+			{ "caption": "-", "id": "side-bar-clip-copy-path-separator" },
 
 			{
 				"caption": "URL编码后的名称",
 				"id": "side-bar-clip-copy-name-encoded",
 				"command": "side_bar_copy_name_encoded",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
-			{"caption": "-", "id": "side-bar-clip-copy-name-encoded-separator"},
+			{ "caption": "-", "id": "side-bar-clip-copy-name-encoded-separator" },
 
 			{
 				"caption": "URL编码后的名称",
 				"id": "side-bar-clip-copy-url",
 				"command": "side_bar_copy_url",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
 			{
 				"caption": "URL解码后的名称",
 				"id": "side-bar-clip-copy-url-decoded",
 				"command": "side_bar_copy_url_decoded",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
-			{"caption": "-", "id": "side-bar-clip-copy-url-separator"},
+			{ "caption": "-", "id": "side-bar-clip-copy-url-separator" },
 
 			{
 				"caption": "a标签",
 				"id": "side-bar-clip-copy-tag-a",
 				"command": "side_bar_copy_tag_ahref",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
 			{
 				"caption": "img标签",
 				"id": "side-bar-clip-copy-tag-img",
 				"command": "side_bar_copy_tag_img",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
 			{
 				"caption": "script标签",
 				"id": "side-bar-clip-copy-tag-script",
 				"command": "side_bar_copy_tag_script",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
 			{
 				"caption": "style标签",
 				"id": "side-bar-clip-copy-tag-style",
 				"command": "side_bar_copy_tag_style",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
-			{"caption": "-", "id": "side-bar-clip-copy-tag-separator"},
+			{ "caption": "-", "id": "side-bar-clip-copy-tag-separator" },
 			{
 				"caption": "项目文件夹",
 				"id": "side-bar-clip-copy-project-directories",
 				"command": "side_bar_copy_project_directories",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
-			{"caption": "-", "id": "side-bar-clip-copy-project-directories-separator"},
+			{ "caption": "-", "id": "side-bar-clip-copy-project-directories-separator" },
 			{
 				"caption": "UTF-8编码后的内容",
 				"id": "side-bar-clip-copy-content-utf8",
 				"command": "side_bar_copy_content_utf8",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
 			{
 				"caption": "base64编码后的内容",
 				"id": "side-bar-clip-copy-content-base-64",
 				"command": "side_bar_copy_content_base64",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			}
 		]
 	},
@@ -456,49 +451,49 @@
 			"in_parent": "True"
 		}
 	},
-	{"caption": "-", "id": "side-bar-clip-separator"},
+	{ "caption": "-", "id": "side-bar-clip-separator" },
 	{
 		"caption": "创建文件副本…",
 		"id": "side-bar-duplicate",
 		"command": "side_bar_duplicate",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
-	{"caption": "-", "id": "side-bar-duplicate-separator"},
+	{ "caption": "-", "id": "side-bar-duplicate-separator" },
 
 	{
 		"caption": "重命名",
 		"id": "side-bar-rename",
 		"command": "side_bar_rename",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 	{
 		"caption": "移动",
 		"id": "side-bar-move",
 		"command": "side_bar_move",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
-	{"caption": "-", "id": "side-bar-rename-move-separator"},
+	{ "caption": "-", "id": "side-bar-rename-move-separator" },
 
 	{
 		"caption": "删除",
 		"id": "side-bar-delete",
 		"command": "side_bar_delete",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
 	{
 		"caption": "清空",
 		"id": "side-bar-empty",
 		"command": "side_bar_empty",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
-	{"caption": "-", "id": "side-bar-delete-separator"},
-
+	{ "caption": "-", "id": "side-bar-delete-separator" },
 	{
 		"caption": "刷新",
 		"id": "side-bar-refresh",
 		"command": "refresh_folder_list"
 	},
-	{"caption": "-", "id": "side-bar-refresh-separator"},
+	{ "caption": "-", "id": "side-bar-refresh-separator" },
+
 	{
 		"caption": "项目",
 		"id": "side-bar-project",
@@ -507,34 +502,34 @@
 				"caption": "编辑项目",
 				"id": "side-bar-project-open-file",
 				"command": "side_bar_project_open_file",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
 			{
 				"caption": "编辑预览地址",
 				"id": "side-bar-preview-edit-urls",
 				"command": "side_bar_preview_edit_urls",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
-			{"caption": "-", "id": "side-bar-project-open-file-separator"},
+			{ "caption": "-", "id": "side-bar-project-open-file-separator" },
 			{
 				"command": "prompt_add_folder",
 				"caption": "添加文件夹到项目...",
 				"mnemonic": "d"
 			},
-			{"caption": "-", "id": "side-bar-promote-as-project-folder-separator"},
+			{ "caption": "-", "id": "side-bar-promote-as-project-folder-separator" },
 			{
 				"caption": "添加为项目文件夹",
 				"id": "side-bar-project-item-add",
 				"command": "side_bar_project_item_add",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
 			{
 				"caption": "从项目中移除该文件)",
 				"id": "side-bar-project-item-exclude",
 				"command": "side_bar_project_item_exclude",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			},
-			{"caption": "-", "id": "side-bar-project-item-separator"},
+			{ "caption": "-", "id": "side-bar-project-item-separator" },
 			{
 				"id": "side-bar-project-item-exclude-from-index-item",
 				"command": "side_bar_project_item_exclude_from_index",
@@ -575,16 +570,22 @@
 					"type": "extension"
 				}
 			},
-			{"caption": "-", "id": "side-bar-project-item-separator"},
+			{ "caption": "-", "id": "side-bar-project-item-separator" },
 			{
 				"caption": "从项目中移除该文件夹",
 				"id": "side-bar-project-item-remove-folder",
 				"command": "side_bar_project_item_remove_folder",
-				"args": {"paths": []}
+				"args": { "paths": [] }
 			}
 		]
 	},
-	{"caption": "-", "id": "side-bar-donate-separator"},
+	{
+		"caption": "Promote",
+		"id": "side-bar-project-item-add",
+		"command": "side_bar_project_item_add",
+		"args": { "paths": [] }
+	},
+	{ "caption": "-", "id": "side-bar-donate-separator" },
 	{
 		"caption": "-",
 		"id": "side-bar-donate-separator"
@@ -592,13 +593,13 @@
 	{
 		"caption": "乐捐作者$20",
 		"command": "side_bar_donate",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	},
-	{"caption": "-", "id": "side-bar-end-separator"},
+	{ "caption": "-", "id": "side-bar-end-separator" },
 	{
 		"caption": "zzzzz_side_bar",
 		"id": "zzzzz_side_bar",
 		"command": "zzzzz_side_bar",
-		"args": {"paths": []}
+		"args": { "paths": [] }
 	}
 ]
