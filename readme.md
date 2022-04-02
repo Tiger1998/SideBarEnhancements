@@ -4,10 +4,6 @@
 
 English - <https://github.com/SideBarEnhancements-org/SideBarEnhancements.git>
 
-Japanese - <http://taamemo.blogspot.jp/2012/10/sublime-text-2-sidebarenhancements.html?m=1>
-
-Russian - <https://www.youtube.com/watch?v=8I0dJTd58kI&feature=youtu.be&a>
-
 ## 介绍
 
 此版本为[Sidebar Enhancements](https://github.com/SideBarEnhancements-org/SideBarEnhancements)的中文版，为[Sublime Text](http://www.sublimetext.com/)侧栏文件和文件夹操作提供增强功能。
@@ -29,6 +25,12 @@ Russian - <https://www.youtube.com/watch?v=8I0dJTd58kI&feature=youtu.be&a>
 也可以到[Tags](https://github.com/52fisher/SideBarEnhancements/tags)页面下载，**请注意：解压后其对应的文件夹路径应为：Sublime Text 3\Data\Packages\SideBarEnhancements**
 
 如下载后的压缩包打开后是这样的：
+要摆脱ST的菜单项，请在“首选项” -> “浏览资源包”里创建两个空文件
+
+- `Default/Side Bar Mount Point.sublime-menu`
+- `Default/Side Bar.sublime-menu`
+
+## Installation
 
 
 ```
@@ -208,7 +210,7 @@ Russian - <https://www.youtube.com/watch?v=8I0dJTd58kI&feature=youtu.be&a>
 
 ## 源代码
 
-<https://github.com/SideBarEnhancements-org/SideBarEnhancements>
+<https://github.com/SideBarEnhancements/SideBarEnhancements>
 
 ## 论坛
 
@@ -219,15 +221,12 @@ Russian - <https://www.youtube.com/watch?v=8I0dJTd58kI&feature=youtu.be&a>
 (Thank you so much!)
 Aleksandar Urosevic, bofm, Dalibor Simacek, Devin Rhode, Eric Eldredge, Hewei Liu, Jeremy Gailor, Joao Antunes, Leif Ringstad, MauriceZ, Nick Zaccardi, Patrik Göthe, Peder Langdal, Randy Lai, Raphael DDL Oliveira, robwala, Stephen Horne, Sven Axelsson, Till Theis, Todd Wolfson, Tyler Thrailkill, Yaroslav Admin
 
-## 待完成
-
-<https://github.com/SideBarEnhancements-org/SideBarEnhancements/issues/223>
 
 ## License
 
 "None are so hopelessly enslaved as those who falsely believe they are free." Johann Wolfgang von Goethe
 
-Copyright (C) 2014 Tito Bouzout [tito.bouzout@gmail.com][]
+Copyright (C) 2014-2022 Tito Bouzout
 
 This license apply to all the files inside this program unless noted different for some files or portions of code inside these files.
 
@@ -236,22 +235,3 @@ This program is free software: you can redistribute it and/or modify it under th
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/gpl.html>
-
-## 觉得有用?欢迎支持（原作者） ^_^
-
-
-捐赠该项目.
-
-  [Sublime Text 3+](http://www.sublimetext.com/)
-
-  [dropbox]( https://www.dropbox.com/s/ckz5n2ncn2pxkii/sidebar.png?dl=1)
-
-  [desktop](http://pypi.python.org/pypi/)
-  
-  [Send2Trash]( http://pypi.python.org/pypi/Send2Trash)
-
-  [bfg-pages]( http://code.google.com/p/bfg-pages/)
-
-  [tito.bouzout@gmail.com](tito.bouzout@gmail.com)
-
-  [Donate to support this project.]( https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DD4SL2AHYJGBW)
