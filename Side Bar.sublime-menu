@@ -586,7 +586,7 @@
 		"args": { "paths": [] }
 	},
 	{
-		"caption": "Unpromote",
+		"caption": "从项目文件夹中移除",
 		"command": "side_bar_project_item_remove_folder",
 		"args": { "paths": [] }
 	},
